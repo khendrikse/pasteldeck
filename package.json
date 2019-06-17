@@ -1,0 +1,22 @@
+{
+  "name": "PastelDeck",
+  "version": "0.0.1",
+  "description": "A cute deck creator for people who want to see more pastel in the world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "deck",
+    "presentations",
+    "slides"
+  ],
+  "author": "Karin Hendrikse",
+  "license": "MIT",
+  "bin": "cli.js",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "inquirer-fuzzy-path": "^2.0.3",
+    "showdown": "^1.9.0"
+  }
+}

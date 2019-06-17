@@ -1,5 +1,5 @@
 {
-  "name": "PastelDeck",
+  "name": "pasteldeck",
   "version": "0.0.1",
   "description": "A cute deck creator for people who want to see more pastel in the world.",
   "main": "index.js",

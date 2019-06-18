@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const showdown = require('showdown');
+const open = require('open');
 
 const converter = new showdown.Converter();
 const dirName = './assets';
@@ -53,7 +54,8 @@ function createFile(template, markdownContent, fileName) {
 
   fs.writeFile(fileName, joinedContent, err => {
     if (err) throw err;
-    console.log('✨ Cute PastelDeck awaits your attention! ✨');
+    console.log('✨ Check out your cute PastelDeck! ✨');
+    open(fileName)
   });
 }
 
@@ -77,6 +79,7 @@ function createAssets(theme) {
 }
 
 function createPastelDeck(markDownFile, theme) {
+  console.log(`✨ ${theme} PastelDeck coming right up! ✨`);
   createAssets(theme);
   const fileName = `${markDownFile.split('.')[0]}.html`;
   const markdownContent = fs.readFileSync(

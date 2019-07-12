@@ -15,6 +15,11 @@ const htmlTemplate = fs.readFileSync(
   'utf8',
   data => data
 );
+const slideScript = fs.readFileSync(
+  path.resolve(__dirname, '../assets/slideScript.js'),
+  'utf8',
+  data => data
+);
 
 function createNav(data) {
   const headers = data
@@ -76,6 +81,7 @@ function createAssets(theme) {
 
   fs.writeFile('assets/style.css', mainStyle, () => {});
   fs.writeFile('assets/theme.css', themeStyle, () => {});
+  fs.writeFile('assets/slideScript.js', slideScript, () => {});
 }
 
 function createPastelDeck(markDownFile, theme) {

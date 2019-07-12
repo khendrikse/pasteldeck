@@ -6,11 +6,13 @@ function navigateSection(e) {
 
   if (direction === 'previous') {
     if (currentLocation === 0) return;
-    return window.location.hash = currentLocation - 1;
+    return (window.location.hash = currentLocation - 1);
   }
 
-  if (currentLocation === slides.length - 1) return;
-  return window.location.hash = currentLocation + 1;
+  if (direction === 'next') {
+    if (currentLocation === slides.length - 1) return;
+    return (window.location.hash = currentLocation + 1);
+  }
 }
 
 function checkKeyCode(e) {

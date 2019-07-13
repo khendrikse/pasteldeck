@@ -24,4 +24,3 @@ function checkKeyCode(e) {
 }
 
 document.addEventListener('keydown', navigateSection);
-window.location.hash = 0;

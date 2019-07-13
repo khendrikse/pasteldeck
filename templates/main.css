@@ -78,3 +78,10 @@ img {
 .PastelDeck__pink .disableText {
   color: #ffa8cc;
 }
+
+/* FadeIn */
+section:target {
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 1s;
+}

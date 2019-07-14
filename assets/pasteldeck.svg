@@ -1,0 +1,28 @@
+<svg width="368" height="447" viewBox="0 0 368 447" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="368" height="447" fill="white"/>
+<g class="face">
+<path d="M128 160V144H240V160H272V176H288V192H304V208H320V240H336V272H320V288H304V304H288V320H256V336H96V320H64V304H48V288H32V240H48V208H64V176H96V160H128Z" fill="black"/>
+<path d="M192 288H144V272H128V256H208V272H192V288Z" fill="white" class="mouth"/>
+<path d="M224 256V240H240V224H256V240H272V256H256V240H240V256H224Z" fill="white" class="right-eye" />
+<path d="M64 256V240H80V224H96V240H112V256H96V240H80V256H64Z" fill="white" class="left-eye"/>
+</g>
+<g class="body">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M128 80V96H96V112H80V128H64V144H32V176H16V208H0V320H16V352H32V368H48V384H64V400H96V416H272V400H304V384H320V368H336V352H352V320H368V208H352V176H336V144H320V128H304V112H272V96H240V80H128ZM144 96V112H112V128H96V144H80V160H48V192H32V224H16V304H32V336H48V352H64V368H80V384H112V400H256V384H288V368H304V352H320V336H336V304H352V224H336V192H320V160H304V144H288V128H256V112H224V96H144Z" fill="black"/>
+<path d="M176 80V64H192V32H208V0H240V32H208V64H192V80H176Z" fill="black"/>
+</g>
+<g class="feet">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M192 400H240V448H192V400ZM224 416H208V432H224V416Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M129 400H177V448H129V400ZM161 416H145V432H161V416Z" fill="black"/>
+</g>
+<g class="hold-deck">
+<g class="deck">
+<rect x="80" y="336" width="153" height="16" fill="#FFD2D2" class="slide-pink"/>
+<rect x="80" y="352" width="153" height="16" fill="#FFF8D1" class="slide-yellow"/>
+<rect x="80" y="368" width="153" height="16" fill="#DDF9FF" class="slide-blue"/>
+</g>
+<g class="hands">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48 336H96V384H48V336ZM80 352H64V368H80V352Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M224 336H272V384H224V336ZM256 352H240V368H256V352Z" fill="black"/>
+</g>
+</g>
+</svg>

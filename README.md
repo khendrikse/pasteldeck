@@ -21,7 +21,7 @@ $ npm install -g PastelDeck
 
 ## How can you use it?
 
-Create your presentation in a markdown file. Make sure to follow the [supported format](##formatting) for PastelDeck.
+Create your presentation in a markdown file. Make sure to follow the [supported format](#formatting) for PastelDeck.
 
 Inside your terminal, navigate to the folder containing your markdown file and run:
 

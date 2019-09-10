@@ -1,6 +1,6 @@
 # PastelDeck
-<div align="center" markdown="1">
-  <img src="./assets/PastelDeck.gif" width="200" alt="icon">
+<div align="center">
+  <img src="./assets/pasteldeck.gif" width="200" alt="icon">
 </div>
 
 PastelDeck is a CLI that helps you transform a markdown file into a simple html-based slideshow. Perfect for when you want to focus on content with a pretty looking outcome.

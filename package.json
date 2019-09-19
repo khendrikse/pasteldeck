@@ -8,6 +8,9 @@
     "presentations",
     "slides"
   ],
+  "scripts": {
+    "commit": "git-cz"
+  },
   "author": "Karin Hendrikse",
   "license": "MIT",
   "bin": "./bin/cli.js",
@@ -16,5 +19,14 @@
     "inquirer-fuzzy-path": "^2.0.3",
     "open": "^6.3.0",
     "showdown": "^1.9.0"
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

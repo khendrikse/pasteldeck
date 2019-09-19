@@ -71,14 +71,6 @@ img {
   text-align: center;
 }
 
-.PastelDeck__pink {
-  background: #ffd2e1;
-}
-
-.PastelDeck__pink .disableText {
-  color: #ffa8cc;
-}
-
 /* FadeIn */
 section:target {
   opacity: 1;

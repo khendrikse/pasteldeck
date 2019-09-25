@@ -1,5 +1,5 @@
 {
-  "name": "pasteldeck",
+  "name": "@khendrikse/pasteldeck",
   "version": "0.0.1",
   "description": "A cute deck creator for people who want to see more pastel in the world.",
   "main": "./index.js",
@@ -28,5 +28,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/khendrikse"
+  },
+  "repository": {
+    "url" : "git://github.com/khendrikse/PastelDeck.git"
   }
 }

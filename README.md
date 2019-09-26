@@ -9,15 +9,7 @@ PastelDeck is a CLI that helps you transform a markdown file into a simple html-
 
 ## Install
 
-With yarn:
-```
-$ yarn global add PastelDeck
-```
-
-With npm:
-```
-$ npm install -g PastelDeck
-```
+Check the installation guide [here](https://github.com/khendrikse/PastelDeck/packages/27045)
 
 ## How can you use it?
 

@@ -5,17 +5,25 @@
 
 PastelDeck is a CLI that helps you transform a markdown file into a simple html-based slideshow. Perfect for when you want to focus on content with a pretty looking outcome.
 
+## Install
+With yarn:
+```	
+$ yarn global add PastelDeck
+```
+With npm:
+```
+$ npm install -g PastelDeck
+```
+
 ## Example
 
-## Install
-With yarn:	With yarn:
-```	```
-$ yarn global add PastelDeck	$ yarn global add PastelDeck
-```	```
-With npm:	With npm:
-```	```
-$ npm install -g PastelDeck	$ npm install -g PastelDeck
-```	```
+## Built with
+* [inquirer](https://github.com/SBoudrias/Inquirer.js#readme)
+* [inquirer-fuzzy-path](https://github.com/adelsz/inquirer-fuzzy-path)
+* [open](https://github.com/sindresorhus/open#readme)
+* [showdown](http://showdownjs.com/)
+* [commitizen](https://github.com/commitizen/cz-cli)
+* [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog)
 
 ## How can you use it?
 

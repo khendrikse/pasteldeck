@@ -1,5 +1,5 @@
 {
-  "name": "@khendrikse/pasteldeck",
+  "name": "pasteldeck",
   "version": "0.0.2",
   "description": "A cute deck creator for people who want to see more pastel in the world.",
   "main": "./index.js",
@@ -11,7 +11,7 @@
   "scripts": {
     "commit": "git-cz"
   },
-  "author": "Karin Hendrikse",
+  "author": "khendrikse",
   "license": "MIT",
   "bin": "./bin/cli.js",
   "dependencies": {
@@ -28,11 +28,5 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/khendrikse"
-  },
-  "repository": {
-    "url" : "git://github.com/khendrikse/PastelDeck.git"
   }
 }

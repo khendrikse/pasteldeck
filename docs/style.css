@@ -1,0 +1,25 @@
+body {
+  margin: 34px;
+}
+
+h1, h2, h3 {
+  font-family: 'Arvo', serif;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+}
+
+code {
+  background-color: #DADDFB;
+  padding: 16px;
+  width: 40vw;
+  margin: 16px 0;
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  code {
+    width: 100vw;
+  }
+}

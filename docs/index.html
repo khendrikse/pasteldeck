@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  A first test for the PastelDeck docs
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo:700|Roboto+Mono:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>PastelDeck</title>
+  </head>
+  <body>
+    <header>
+      <h1>PastelDeck</h1>
+      <p>
+        PastelDeck is a CLI that helps you transform a markdown file into a
+        simple html-based slideshow. Perfect for when you want to focus on
+        content with a pretty looking outcome.
+      </p>
+    </header>
+    <section>
+      <h2>How to install</h2>
+      <p>
+        You can install using either <strong>npm</strong> or
+        <strong>yarn</strong>.
+      </p>
+      <code>$ yarn global add PastelDeck</code>
+      <code>$ npm install -g PastelDeck</code>
+    </section>
+    <section>
+      <h2>How to use it</h2>
+      <p>
+        Create your presentation in a markdown file. Make sure to follow the
+        supported format for PastelDeck. Inside your terminal, navigate to the
+        folder containing your markdown file and run:
+
+        <code>$ pasteldeck </code>
+        After this the CLI will walk you through selecting the markdown file to
+        convert into the slideshow, and you will be able to select a theme
+        colour.
+      </p>
+    </section>
+    <section>
+      <h2>Formatting</h2>
+      <p>
+        To create a slide, add a horizontal rule in markdown. Anything after the
+        horizontal rule is part of the slide.
+        <code>
+          ---<br />
+          <br />
+          ## This is part of slide 1 This is also part of slide 1!<br />
+          <br />
+          <br />
+          ---<br />
+          <br />
+          ## This is part of slide 2 This is also part of slide 2!<br />
+          <br />
+        </code>
+      </p>
+    </section>
+    <section>
+      <h3>Supported markdown</h3>
+      <p>
+        PastelDeck supports normal markdown syntax. Only horizontal rules using
+      </p>
+
+      <code>---</code>
+      <p>Is not supported as it is used to divide sections into slides.</p>
+    </section>
+  </body>
 </html>

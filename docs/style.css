@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem;
+}
+
+header {
+  font-weight: 600;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Arvo', serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p, a {
+  font-family: 'Roboto Mono', monospace;
+  color: black;
+}
+
+code {
+  background-color: #daddfb;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.example {
+  padding: 1rem;
+  background-color: #FFd2E1;
+  width: fit-content;
+  display: block;
+}
+
+#logo {
+  width: 100px;
+}
+
+@media screen and (min-width: 600px) {
+  code {
+    width: 40vw;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .wrapper {
+    max-width: 70vw;
+  }
+}

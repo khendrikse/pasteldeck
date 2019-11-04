@@ -1,7 +1,7 @@
 
 ---slide---
 
-## A pink example of PastelDeck
+## A yellow example of PastelDeck
 
 PastelDeck is a very simple markdown to html deckbuilder that runs from your CLI..
 All you need to do is run

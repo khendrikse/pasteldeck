@@ -1,8 +1,9 @@
 
----
+---slide---
 
-## PastelDeck is a very simple markdown to html deckbuilder that runs from your CLI.
+## A pink example of PastelDeck
 
+PastelDeck is a very simple markdown to html deckbuilder that runs from your CLI..
 All you need to do is run
 
 <code>$ yarn global add PastelDeck</code> or
@@ -13,13 +14,16 @@ and then run
 
 **To continue, press down or right**
 
----
+---slide---
 
 ## Normal markdown syntax
 
-PastelDeck supports normal markdown syntax. Only horizontal rules using three dashes is not supported as it is used to divide sections into slides.
+PastelDeck supports normal markdown syntax. You can create slides by adding
 
----
+<code>---slide---</code>
+
+
+---slide---
 
 ## Secret navigation!
 

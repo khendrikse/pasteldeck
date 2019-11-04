@@ -1,6 +1,6 @@
 {
   "name": "pasteldeck",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A cute deck creator for people who want to see more pastel in the world.",
   "main": "./index.js",
   "keywords": [
@@ -19,7 +19,7 @@
     "inquirer": "^6.3.1",
     "inquirer-fuzzy-path": "^2.0.3",
     "open": "^6.3.0",
-    "showdown": "^1.9.0"
+    "showdown": "^1.9.1"
   },
   "devDependencies": {
     "commitizen": "^4.0.3",

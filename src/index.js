@@ -36,7 +36,7 @@ function setSectionId(data) {
   let num = 0;
 
   return data
-    .replace(/---/g, function() {
+    .replace(/---slide---\n/g, function () {
       const sectionHTML = `<section id='${num}' markdown>`;
       if (num === 0) return ++num && sectionHTML;
       return ++num && `</section>${sectionHTML}`;
@@ -59,7 +59,7 @@ function createFile(template, markdownContent, fileName) {
 
   fs.writeFile(fileName, joinedContent, err => {
     if (err) throw err;
-    console.log('✨ Check out your cute PastelDeck! ✨');
+    setTimeout(() => console.log('✨ Check out your cute PastelDeck! ✨'), 500)
     open(fileName)
   });
 }
@@ -79,9 +79,9 @@ function createAssets(theme) {
     data => data
   );
 
-  fs.writeFile('assets/style.css', mainStyle, () => {});
-  fs.writeFile('assets/theme.css', themeStyle, () => {});
-  fs.writeFile('assets/slideScript.js', slideScript, () => {});
+  fs.writeFile('assets/style.css', mainStyle, () => { });
+  fs.writeFile('assets/theme.css', themeStyle, () => { });
+  fs.writeFile('assets/slideScript.js', slideScript, () => { });
 }
 
 function createPastelDeck(markDownFile, theme) {

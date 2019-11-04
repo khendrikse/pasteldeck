@@ -11,6 +11,10 @@ header {
   text-align: center;
 }
 
+section {
+  margin: 1rem 0;
+}
+
 h1,
 h2,
 h3 {
@@ -42,13 +46,62 @@ code {
 
 .example {
   padding: 1rem;
-  background-color: #FFd2E1;
   width: fit-content;
-  display: block;
+  display: inline-block;
+}
+
+#pink {
+  background: #FFd2E1;
+}
+
+#blue {
+  background: #DAEDFB;
+}
+
+#purple {
+  background: #DADDFB;
+}
+
+#green {
+  background: #DAFBF8;
+}
+
+#yellow {
+  background: #FFFCDD;
+}
+
+#salmon {
+  background: #FFD8D8;
 }
 
 #logo {
   width: 100px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
 
 @media screen and (min-width: 600px) {

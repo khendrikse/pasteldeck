@@ -123,12 +123,12 @@
             To create a slide, add a horizontal rule in markdown. Anything after
             the horizontal rule is part of the slide.
             <code>
-              ---<br />
+              ---slide---<br />
               <br />
               ## This is part of slide 1 This is also part of slide 1!<br />
               <br />
               <br />
-              ---<br />
+              ---slide---<br />
               <br />
               ## This is part of slide 2 This is also part of slide 2!<br />
               <br />
@@ -138,12 +138,8 @@
         <section>
           <h3>Supported markdown</h3>
           <p>
-            PastelDeck supports normal markdown syntax. Only horizontal rules
-            using
+            PastelDeck supports <a href="https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax">ShowDown's supported markdown syntax</a>.
           </p>
-
-          <code>---</code>
-          <p>Is not supported as it is used to divide sections into slides.</p>
         </section>
       </div>
     </div>

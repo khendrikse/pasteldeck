@@ -42,7 +42,7 @@ Inside your terminal, navigate to the folder containing your markdown file and r
 $ pasteldeck
 ```
 
-After this the CLI will walk you through selecting the markdown file to convert into the slideshow, and you will be able to select a theme colour.
+After this the CLI will walk you through selecting the markdown file to convert into the slideshow, you will be able to select a theme colour and use watch mode or not.
 
 ## Themes
 

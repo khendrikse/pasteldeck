@@ -44,7 +44,12 @@ function setSectionId(data) {
     .concat('</section>');
 }
 
-function createFile(template, markdownContent, fileName) {
+function createFile(template, markDownFile, fileName, watchMode) {
+  const markdownContent = fs.readFileSync(
+    markDownFile,
+    'utf8',
+    (err, data) => data
+  );
   const cleanedSections = setSectionId(markdownContent);
   const navigation = createNav(cleanedSections);
   const content = converter.makeHtml(cleanedSections);
@@ -60,7 +65,10 @@ function createFile(template, markdownContent, fileName) {
   fs.writeFile(fileName, joinedContent, err => {
     if (err) throw err;
     setTimeout(() => console.log('✨ Check out your cute PastelDeck! ✨'), 500)
-    open(fileName)
+
+    if (!watchMode) {
+      open(fileName)
+    }
   });
 }
 
@@ -84,16 +92,22 @@ function createAssets(theme) {
   fs.writeFile('assets/slideScript.js', slideScript, () => { });
 }
 
-function createPastelDeck(markDownFile, theme) {
+function createPastelDeck(markDownFile, theme, watchMode) {
   console.log(`✨ ${theme} PastelDeck coming right up! ✨`);
+  console.log(`✨ CTRL-C to shut down ✨`);
+
   createAssets(theme);
   const fileName = `${markDownFile.split('.')[0]}.html`;
-  const markdownContent = fs.readFileSync(
-    markDownFile,
-    'utf8',
-    (err, data) => data
-  );
-  createFile(htmlTemplate, markdownContent, fileName);
+
+  if (watchMode) {
+    fs.watchFile(markDownFile, (curr, prev) => {
+      console.log('updating...');
+      createFile(htmlTemplate, markDownFile, fileName, watchMode);
+      console.log('refresh your browser!');
+    });
+  }
+
+  return createFile(htmlTemplate, markDownFile, fileName);
 }
 
 module.exports = createPastelDeck;

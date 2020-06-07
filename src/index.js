@@ -107,7 +107,7 @@ function createPastelDeck(markDownFile, theme, watchMode) {
     });
   }
 
-  return createFile(htmlTemplate, markDownFile, fileName);
+  return createFile(htmlTemplate, markDownFile, fileName, watchMode);
 }
 
 module.exports = createPastelDeck;

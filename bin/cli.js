@@ -26,7 +26,7 @@ inquirer
     {
       type: 'confirm',
       name: 'watchmode',
-      message: 'Want to start watchmode?????',
+      message: 'Want to start watchmode?',
       default: false
     }
   ])

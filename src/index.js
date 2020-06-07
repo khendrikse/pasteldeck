@@ -99,6 +99,8 @@ function createPastelDeck(markDownFile, theme, watchMode) {
   createAssets(theme);
   const fileName = `${markDownFile.split('.')[0]}.html`;
 
+  createFile(htmlTemplate, markDownFile, fileName);
+
   if (watchMode) {
     fs.watchFile(markDownFile, (curr, prev) => {
       console.log('updating...');
@@ -106,8 +108,6 @@ function createPastelDeck(markDownFile, theme, watchMode) {
       console.log('refresh your browser!');
     });
   }
-
-  return createFile(htmlTemplate, markDownFile, fileName, watchMode);
 }
 
 module.exports = createPastelDeck;

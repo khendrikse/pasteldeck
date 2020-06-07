@@ -22,8 +22,14 @@ inquirer
       filter: function(val) {
         return val.toLowerCase();
       }
+    },
+    {
+      type: 'confirm',
+      name: 'watchmode',
+      message: 'Want to start watchmode?',
+      default: false
     }
   ])
   .then(answers => {
-    createPastelDeck(answers.markdownFile, answers.theme);
+    createPastelDeck(answers.markdownFile, answers.theme, answers.watchmode);
   });

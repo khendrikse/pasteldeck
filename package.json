@@ -1,6 +1,6 @@
 {
   "name": "pasteldeck",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A cute deck creator for people who want to see more pastel in the world.",
   "main": "./index.js",
   "keywords": [

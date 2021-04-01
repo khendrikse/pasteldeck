@@ -77,3 +77,10 @@ section:target {
   transition-property: opacity;
   transition-duration: 1s;
 }
+
+blockquote {
+  border-left: 5px solid white;
+  padding: 0px 16px;
+  font-weight: bolder;
+  font-size: larger;
+}

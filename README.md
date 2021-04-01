@@ -64,16 +64,24 @@ To create a slide, add a horizontal rule in markdown. Anything after the horizon
 ```md
 ---slide---
 
-## This is part of slide 1
+# This is part of slide 1 and this title will go in the index!
 
 This is also part of slide 1!
 
 ---slide---
 
-## This is part of slide 2
+## This is part of slide 2 and this title will go in the index!
+
+## This title will not be part of the index
 
 This is also part of slide 2!
+
 ```
+
+### Automatic indexing
+
+Pasteldeck will automatically create a semi-hidden index for easy navigation by mouse (if you need it) by using the first heading of every slide.
+
 
 ### Supported markdown
 

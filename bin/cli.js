@@ -10,7 +10,7 @@ inquirer
     {
       type: 'fuzzypath',
       itemType: 'file',
-      name: 'markdownFile',
+      name: 'markDownFile',
       message: 'Select the markdown file to transform',
       suggestOnly: false
     },
@@ -25,11 +25,17 @@ inquirer
     },
     {
       type: 'confirm',
-      name: 'watchmode',
+      name: 'watchMode',
       message: 'Want to start watchmode?',
       default: false
+    },
+    {
+      type: 'confirm',
+      name: 'enableIndex',
+      message: 'Add index?',
+      default: true
     }
   ])
   .then(answers => {
-    createPastelDeck(answers.markdownFile, answers.theme, answers.watchmode);
+    createPastelDeck(answers);
   });

@@ -2,7 +2,7 @@
 
 PastelDeck is a CLI that helps you transform a markdown file into a simple html-based slideshow. Perfect for when you want to focus on content with a pretty looking outcome.
 
-Check out docs at https://khendrikse.github.io/pasteldeck/
+Check out docs at https://pasteldeck.netlify.app/
 
 ## Install
 
